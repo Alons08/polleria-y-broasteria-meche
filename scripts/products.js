@@ -423,7 +423,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
-    renderProducts('comidas');
+    renderProducts('platos');
     setupFilters();
     setupProductEvents();
 }
