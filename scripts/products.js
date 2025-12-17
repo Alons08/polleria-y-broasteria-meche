@@ -36,7 +36,16 @@ const products = [
         category: "platos",
         price: 12.00,
         description: "Porción de pollo broaster con papas.",
-        image: "./images/menu/broaster.jpg",
+        image: "./images/menu/broaster-12.jpg",
+        available: true
+    },
+    {
+        id: 104,
+        name: "Broaster",
+        category: "platos",
+        price: 18.00,
+        description: "Porción de pollo, chaufa, papas, ensalada y cremas.",
+        image: "./images/menu/broaster-18.jpg",
         available: true
     },
     {
@@ -83,6 +92,15 @@ const products = [
         specialPrice: { days: [3, 6], price: 13.00 }, // Miércoles (3) y Sábado (6)
         description: "Brasa mostrito: pollo a la brasa con chaufa y papas.",
         image: "./images/menu/brasa-mostrito.jpg",
+        available: true
+    },
+    {
+        id: 101,
+        name: "Salchipapa",
+        category: "platos",
+        price: 10.00,
+        description: "Salchipapa tradicional.",
+        image: "./images/menu/salchipapa.jpg",
         available: true
     },
     {
