@@ -87,11 +87,11 @@ const products = [
     },
     {
         id: 101,
-        name: "Salchipapa",
+        name: "Salchibrasa",
         category: "platos",
-        price: 10.00,
-        description: "Salchipapa tradicional.",
-        image: "./images/menu/salchipapa.jpg",
+        price: 18.00,
+        description: "Salchibrasa tradicional.",
+        image: "./images/menu/salchibrasa.jpg",
         available: true
     },
     {
