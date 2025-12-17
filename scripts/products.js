@@ -100,7 +100,7 @@ const products = [
         category: "platos",
         price: 100.00,
         description: "1 Pollo entero + 4 porciones broaster + salchipapa + 2 hamburguesas + 1 jarra chicha + 2 porciones de chaufa + cremas + ensalada + chorizo + papa.",
-        image: "./images/menu/barco-meche.jpg",
+        image: "./images/menu/combo-barco.jpg",
         available: true
     },
     {
