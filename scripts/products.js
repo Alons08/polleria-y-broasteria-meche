@@ -1,217 +1,320 @@
 // Array completo de productos
 const products = [
+    // PLATOS
     {
         id: 1,
-        name: "Picante de Cuy 1/2",
-        category: "comidas",
-        price: 45.00,
-        description: "Cuy frito acompañado de ajiaco de papa con trigo o arroz, y ensalada criolla.",
-        image: "./images/menu/picante-de-cuy.jpg",
-        available: true
-    },
-    {
-        id: 2,
-        name: "Chicharrón de Chancho",
-        category: "comidas",
-        price: 35.00,
-        description: "Crujiente chicharrón de cerdo servido con mote, cancha, yuca y salsa criolla.",
-        image: "./images/menu/chicharron-de-chancho.jpg",
-        available: true
-    },
-    {
-        id: 3,
-        name: "Frejolada de Pato",
-        category: "comidas",
-        price: 35.00,
-        description: "Tradicional frejolada de pato con arroz y menestra.",
-        image: "./images/menu/frejolada-de-pato.jpg",
-        available: true
-    },
-    {
-        id: 4,
-        name: "Cabrito Norteno",
-        category: "comidas",
-        price: 35.00,
-        description: "Exquisito cabrito preparado al estilo norteño con frijoles y yuca.",
-        image: "./images/menu/cabrito-norteno.jpg",
-        available: true
-    },
-    {
-        id: 5,
-        name: "Costillar",
-        category: "comidas",
-        price: 35.00,
-        description: "Costillar de res acompañado de yucas fritas y papas doradas con ensalada criolla y cremas. ",
-        image: "./images/menu/costillar.jpg",
-        available: true
-    },
-    {
-        id: 6,
-        name: "Pepian Pavita de Corral",
-        category: "comidas",
-        price: 35.00,
-        description: "Pavita criolla en salsa de pepian con arroz y yuca.",
-        image: "./images/menu/pepian-pavita.jpg",
-        available: true
-    },
-    {
-        id: 7,
-        name: "Caldo de Gallina",
-        category: "comidas",
-        price: 25.00,
-        description: "Reconfortante caldo de gallina acompañada de cancha, limón y cebolla china picada.",
-        image: "./images/menu/caldo-gallina.jpg",
-        available: true
-    },
-    {
-        id: 8,
-        name: "Ceviche",
-        category: "comidas",
-        price: 35.00,
-        description: "Fresco ceviche de pescado con leche de tigre o clásico, camote, choclo y cancha.",
-        image: "./images/menu/ceviche.jpg",
-        available: true
-    },
-    {
-        id: 9,
-        name: "Chicharrón de Pescado",
-        category: "comidas",
-        price: 35.00,
-        description: "chicharrón de pescado empanizado y frito, servido con yuca y ensalada.",
-        image: "./images/menu/chicharron-pescado.jpg",
-        available: true
-    },
-    {
-        id: 10,
-        name: "Chancho a la Caja China",
-        category: "comidas",
-        price: 30.00,
-        description: "Chancho cocinado en caja china con ensalada y papas y camote sanchochados.",
-        image: "./images/menu/chancho-caja-china.jpg",
-        available: true
-    },
-    {
-        id: 11,
-        name: "Chuleta de Chancho",
-        category: "comidas",
-        price: 30.00,
-        description: "Chuleta de cerdo a la parrilla con choclo y papas sanchochadas.",
-        image: "./images/menu/chuleta-chancho.jpg",
-        available: true
-    },
-    {
-        id: 12,
-        name: "Shambar",
-        category: "comidas",
+        name: "1/4 Pollo a la Brasa",
+        category: "platos",
         price: 15.00,
-        description: "Tradicional sopa norteña preparada con trigo, menestras, carne y tocino.",
-        image: "./images/menu/shambar.jpg",
-        available: false
-    },
-        /* BEBIDASSSSSSSSS */
-    {
-        id: 101,
-        name: "Agua Mineral",
-        category: "bebidas",
-        price: 2.00,
-        description: "Agua mineral sin gas de 625ml.",
-        image: "./images/menu/agua-mineral.jpg",
+        specialPrice: { days: [3, 6], price: 10.00 }, // Miércoles (3) y Sábado (6)
+        description: "1/4 de pollo a la brasa con papas, cremas y ensalada.",
+        image: "./images/menu/brasa-cuartooo.jpg",
         available: true
     },
     {
         id: 102,
-        name: "Gaseosa Coca Cola 1/2L",
+        name: "1/2 Pollo a la Brasa",
+        category: "platos",
+        price: 30.00,
+        description: "1/2 pollo a la brasa con papas, cremas y ensalada.",
+        image: "./images/menu/medio-pollo.jpg",
+        available: true
+    },
+    {
+        id: 3,
+        name: "Pollo a la Brasa Entero",
+        category: "platos",
+        price: 60.00,
+        specialPrice: { days: [3, 6], price: 50.00 }, // Miércoles (3) y Sábado (6)
+        description: "Pollo entero con papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
+        image: "./images/menu/pollo-entero.jpg",
+        available: true
+    },
+    {
+        id: 5,
+        name: "Broaster",
+        category: "platos",
+        price: 12.00,
+        description: "Porción de pollo broaster con papas.",
+        image: "./images/menu/broaster.jpg",
+        available: true
+    },
+    {
+        id: 6,
+        name: "Mostrito",
+        category: "platos",
+        price: 13.00,
+        description: "Porción de pollo broaster con chaufa y papas.",
+        image: "./images/menu/mostrito.jpg",
+        available: true
+    },
+    {
+        id: 7,
+        name: "Hamburguesa de Carne",
+        category: "platos",
+        price: 5.00,
+        description: "Hamburguesa de carne con papas.",
+        image: "./images/menu/hamburguesa-carne.jpg",
+        available: true
+    },
+    {
+        id: 8,
+        name: "Hamburguesa Broaster",
+        category: "platos",
+        price: 8.00,
+        description: "Hamburguesa de pollo broaster con papas.",
+        image: "./images/menu/hamburguesa-broaster.jpg",
+        available: true
+    },
+    {
+        id: 9,
+        name: "Caldo de Gallina",
+        category: "platos",
+        price: 10.00,
+        description: "Caldo de gallina tradicional.",
+        image: "./images/menu/caldo-gallina.jpg",
+        available: true
+    },
+    {
+        id: 100,
+        name: "Brasa Mostrito",
+        category: "platos",
+        price: 16.00,
+        specialPrice: { days: [3, 6], price: 13.00 }, // Miércoles (3) y Sábado (6)
+        description: "Brasa mostrito: pollo a la brasa con chaufa y papas.",
+        image: "./images/menu/brasa-mostrito.jpg",
+        available: true
+    },
+    {
+        id: 101,
+        name: "Salchipapa",
+        category: "platos",
+        price: 10.00,
+        description: "Salchipapa tradicional.",
+        image: "./images/menu/salchipapa.jpg",
+        available: true
+    },
+    {
+        id: 10,
+        name: "Barco Meche",
+        category: "platos",
+        price: 100.00,
+        description: "1 Pollo entero + 4 porciones broaster + salchipapa + 2 hamburguesas + 1 jarra chicha + 2 porciones de chaufa + cremas + ensalada + chorizo + papa.",
+        image: "./images/menu/barco-meche.jpg",
+        available: true
+    },
+    {
+        id: 11,
+        name: "Combo Broaster",
+        category: "platos",
+        price: 50.00,
+        description: "4 piezas de broaster, papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
+        image: "./images/menu/combo-broaster.jpg",
+        available: true
+    },
+    // BEBIDAS
+    {
+        id: 20,
+        name: "Agua Cielo",
         category: "bebidas",
-        price: 4.00,
-        description: "Sabor único y refrescante en la presentación de medio litro.",
+        price: 2.00,
+        description: "Botella de agua Cielo.",
+        image: "./images/menu/agua-mineral.jpg",
+        available: true
+    },
+    {
+        id: 21,
+        name: "Coca Cola 500ml",
+        category: "bebidas",
+        price: 3.00,
+        description: "Botella de Coca Cola 500ml.",
         image: "./images/menu/gaseosa-coca-500ml.jpg",
         available: true
     },
     {
-        id: 103,
-        name: "Gaseosa Inca Kola 1/2L",
+        id: 22,
+        name: "Inka Kola 500ml",
         category: "bebidas",
-        price: 4.00,
-        description: "Dulce y auténtica bebida peruana en la presentación de medio litro.",
+        price: 3.00,
+        description: "Botella de Inka Kola 500ml.",
         image: "./images/menu/gaseosa-inka-500ml.jpg",
         available: true
     },
     {
-        id: 104,
-        name: "Gaseosa Pepsi 1/2L",
+        id: 22,
+        name: "Pepsi",
+        category: "bebidas",
+        price: 2.00,
+        description: "Botella de Pepsi.",
+        image: "./images/menu/gaseosa-pepsi.jpg",
+        available: true
+    },
+    {
+        id: 23,
+        name: "Coca Cola 1.5L",
+        category: "bebidas",
+        price: 8.00,
+        description: "Botella de Coca Cola 1.5L.",
+        image: "./images/menu/gaseosa-coca-1-5lt.jpg",
+        available: true
+    },
+    {
+        id: 24,
+        name: "Inka Kola 1.5L",
+        category: "bebidas",
+        price: 8.00,
+        description: "Botella de Inka Kola 1.5L.",
+        image: "./images/menu/gaseosa-inca-1-5lt.jpg",
+        available: true
+    },
+    {
+        id: 24,
+        name: "Fanta 500ml",
         category: "bebidas",
         price: 4.00,
-        description: "Refrescante con un sabor inconfundible en la presentación de medio litro.",
-        image: "./images/menu/gaseosa-pepsi-500ml.jpg",
-        available: true
-    }, 
-    {
-        id: 105,
-        name: "Gaseosas Coca Cola 1L",
-        category: "bebidas",
-        price: 8.00,
-        description: "Refrescante y con un sabor único en la presentación de un litro.",
-        image: "./images/menu/gaseosa-coca-1l.jpg",
+        description: "Botella de Fanta 500ml.",
+        image: "./images/menu/gaseosa-fanta.jpg",
         available: true
     },
     {
-        id: 106,
-        name: "Gaseosas Inca Kola 1L",
+        id: 25,
+        name: "Gordita Inka",
         category: "bebidas",
-        price: 8.00,
-        description: "Dulce y auténtica bebida peruana en la presentación de un litro.",
-        image: "./images/menu/gaseosa-inka-1l.jpg",
+        price: 5.00,
+        description: "Botella de Inka Kola grande.",
+        image: "./images/menu/gaseosa-gordita.jpg",
         available: true
     },
     {
-        id: 107,
-        name: "Gaseosas Pepsi 1L",
+        id: 26,
+        name: "Gatorade",
         category: "bebidas",
-        price: 8.00,
-        description: "Refrescante con un sabor inconfundible en la presentación de un litro.",
-        image: "./images/menu/gaseosa-pepsi-1l.jpg",
+        price: 3.00,
+        description: "Botella de Gatorade.",
+        image: "./images/menu/gatorade.jpg",
         available: true
     },
     {
-        id: 108,
-        name: "Chicha Morada",
+        id: 27,
+        name: "Chicha 1L Jarra",
         category: "bebidas",
-        price: 15.00,
-        description: "Refrescante bebida peruana hecha con maíz morado, frutas y especias.",
+        price: 8.00,
+        description: "Jarra de chicha de 1 litro.",
         image: "./images/menu/chicha-morada.jpg",
         available: true
     },
+    // TRAGOS
     {
-        id: 109,
+        id: 30,
         name: "Cerveza Pilsen",
-        category: "bebidas",
+        category: "tragos",
         price: 9.00,
-        description: "Refrescante cerveza nacional, perfecta para acompañar tus comidas.",
+        description: "Botella de cerveza Pilsen.",
         image: "./images/menu/cerveza-pilsen.jpg",
         available: true
     },
     {
-        id: 110,
-        name: "Cerveza Cusqueña Trigo",
-        category: "bebidas",
-        price: 10.00,
-        description: "Cerveza artesanal de trigo con un sabor suave y único.",
+        id: 31,
+        name: "Cusqueña Trigo",
+        category: "tragos",
+        price: 9.00,
+        description: "Botella de Cusqueña Trigo.",
         image: "./images/menu/cerveza-trigo.jpg",
         available: true
     },
     {
-        id: 111,
-        name: "Cerveza Cusqueña Negra",
-        category: "bebidas",
+        id: 32,
+        name: "Chaqueta Negra",
+        category: "tragos",
+        price: 9.00,
+        description: "Botella de Chaqueta Negra.",
+        image: "./images/menu/chaqueta-negra.jpg",
+        available: true
+    },
+    {
+        id: 33,
+        name: "Pisco Sour",
+        category: "tragos",
+        price: 28.00,
+        description: "Copa de Pisco Sour.",
+        image: "./images/menu/pisco-sour.jpg",
+        available: true
+    },
+    {
+        id: 34,
+        name: "Vino Tabernero Rosé",
+        category: "tragos",
+        price: 29.00,
+        description: "Botella de vino Tabernero Rosé.",
+        image: "./images/menu/vino-rose.jpg",
+        available: true
+    },
+    {
+        id: 35,
+        name: "Vino Tabernero Borgoña",
+        category: "tragos",
+        price: 29.00,
+        description: "Botella de vino Tabernero Borgoña.",
+        image: "./images/menu/vino-borgona.jpg",
+        available: true
+    },
+    {
+        id: 36,
+        name: "Chilcano 275ml",
+        category: "tragos",
+        price: 11.00,
+        description: "Botella de Chilcano 275ml.",
+        image: "./images/menu/chilcano.jpg",
+        available: true
+    },
+    {
+        id: 37,
+        name: "Whisky Red Label",
+        category: "tragos",
+        price: 60.00,
+        description: "Botella de Whisky Red Label.",
+        image: "./images/menu/whisky-red-label.jpg",
+        available: true
+    },
+    {
+        id: 38,
+        name: "Monster",
+        category: "tragos",
         price: 10.00,
-        description: "Cerveza negra con notas de malta tostada y un sabor intenso.",
-        image: "./images/menu/cerveza-negra.jpg",
+        description: "Lata de Monster.",
+        image: "./images/menu/monster.jpg",
+        available: true
+    },
+    {
+        id: 39,
+        name: "Heineken 473ml",
+        category: "tragos",
+        price: 8.00,
+        description: "Lata de Heineken 473ml.",
+        image: "./images/menu/heineken.jpg",
+        available: true
+    },
+    {
+        id: 40,
+        name: "Red Bull",
+        category: "tragos",
+        price: 9.00,
+        description: "Lata de Red Bull.",
+        image: "./images/menu/redbull.jpg",
         available: true
     }
 ];
 
 // Hacer el array accesible globalmente
 window.restaurantProducts = products;
+
+function getProductPrice(product) {
+    const today = new Date().getDay();
+    if (product.specialPrice && product.specialPrice.days.includes(today)) {
+        return product.specialPrice.price;
+    }
+    return product.price;
+}
 
 function renderProducts(category = 'comidas') {
     const menuItemsContainer = document.getElementById('menu-items');
@@ -232,6 +335,8 @@ function renderProducts(category = 'comidas') {
     }
 
     filteredProducts.forEach(product => {
+        const price = getProductPrice(product);
+        const isSpecial = product.specialPrice && product.specialPrice.days.includes(new Date().getDay());
         const productElement = document.createElement('div');
         productElement.className = 'menu-item';
         productElement.innerHTML = `
@@ -242,7 +347,7 @@ function renderProducts(category = 'comidas') {
             <div class="item-info">
                 <h3>${product.name}</h3>
                 <p class="description">${product.description}</p>
-                <span class="price">S/ ${product.price.toFixed(2)}</span>
+                <span class="price">S/ ${price.toFixed(2)}${isSpecial ? ' <span class="special-price">(Precio especial)</span>' : ''}</span>
                 ${product.available ? `
                 <div class="item-actions">
                     <div class="quantity-control">
@@ -294,23 +399,21 @@ function setupProductEvents() {
         if (addToCartBtn) {
             const productId = parseInt(addToCartBtn.dataset.id);
             const product = window.restaurantProducts.find(p => p.id === productId);
-            
             if (product) {
                 const quantityInput = addToCartBtn.closest('.item-actions').querySelector('.quantity-input');
                 const quantity = parseInt(quantityInput.value) || 1;
-                
-                // Disparar evento personalizado con la cantidad correcta
+                // Usar el precio correcto según el día
+                const price = getProductPrice(product);
+                // Disparar evento personalizado con la cantidad y precio correcto
                 const event = new CustomEvent('productAddedToCart', {
-                    detail: { product, quantity }
+                    detail: { product: { ...product, price }, quantity }
                 });
                 document.dispatchEvent(event);
-                
                 // Mostrar feedback visual
                 const notification = document.createElement('div');
                 notification.className = 'add-to-cart-feedback';
                 notification.textContent = `+${quantity}`;
                 addToCartBtn.appendChild(notification);
-                
                 setTimeout(() => {
                     notification.remove();
                 }, 1000);
