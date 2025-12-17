@@ -8,7 +8,7 @@ const products = [
         price: 15.00,
         specialPrice: { days: [3, 6], price: 10.00 }, // Miércoles (3) y Sábado (6)
         description: "1/4 de pollo a la brasa con papas, cremas y ensalada.",
-        image: "./images/menu/brasa-cuartooo.jpg",
+        image: "./images/menu/brasa-cuarto.jpg",
         available: true
     },
     {
