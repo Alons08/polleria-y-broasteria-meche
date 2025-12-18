@@ -242,11 +242,11 @@ const products = [
     },
     {
         id: 32,
-        name: "Chaqueta Negra",
+        name: "Cusqueña Negra",
         category: "tragos",
         price: 9.00,
-        description: "Botella de Chaqueta Negra.",
-        image: "./images/menu/chaqueta-negra.jpg",
+        description: "Botella de Cusqueña Negra.",
+        image: "./images/menu/cerveza-negra.jpg",
         available: true
     },
     {
