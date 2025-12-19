@@ -54,7 +54,7 @@ const products = [
         category: "platos",
         price: 13.00,
         description: "Porción de pollo broaster con chaufa y papas.",
-        image: "./images/menu/mostrito.jpg",
+        image: "./images/menu/mostritoo.jpg",
         available: true
     },
     {
