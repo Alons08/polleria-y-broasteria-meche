@@ -6,7 +6,7 @@ const products = [
         name: "1/4 Pollo a la Brasa",
         category: "platos",
         price: 15.00,
-        specialPrice: { days: [3, 6], price: 10.00 }, // Miércoles (3) y Sábado (6)
+        specialPrice: { days: [3, 6], price: 12.00 }, // Miércoles (3) y Sábado (6)
         description: "1/4 de pollo a la brasa con papas, cremas y ensalada.",
         image: "./images/menu/brasa-cuarto.jpg",
         available: true
@@ -16,6 +16,7 @@ const products = [
         name: "1/2 Pollo a la Brasa",
         category: "platos",
         price: 30.00,
+        specialPrice: { days: [3, 6], price: 24.00 }, // Miércoles (3) y Sábado (6)
         description: "1/2 pollo a la brasa con papas, cremas y ensalada.",
         image: "./images/menu/medio-pollo.jpg",
         available: true
@@ -25,7 +26,7 @@ const products = [
         name: "Pollo a la Brasa Entero",
         category: "platos",
         price: 60.00,
-        specialPrice: { days: [3, 6], price: 50.00 }, // Miércoles (3) y Sábado (6)
+        specialPrice: { days: [3, 6], price: 48.00 }, // Miércoles (3) y Sábado (6)
         description: "Pollo entero con papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
         image: "./images/menu/pollo-entero.jpg",
         available: true
